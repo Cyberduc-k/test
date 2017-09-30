@@ -1,0 +1,94 @@
+.syntax--js {
+    .syntax--constant {
+        color: @very-dark-gray;
+    }
+
+    color: @blue;
+
+    .syntax--support {
+        &.syntax--variable {
+            &.syntax--property {
+                color: @very-dark-gray;
+            }
+            &.syntax--property.syntax--dom {
+                color: @blue;
+            }
+        }
+        &.syntax--class {
+          color: @yellow;
+        }
+    }
+
+    .syntax--type {
+      &.syntax--var {
+        color: @yellow;
+      }
+    }
+
+    .syntax--entity {
+        &.syntax--name {
+            &.syntax--type {
+                color: @orange;
+                &.syntax--function {
+                  color: @blue;
+                }
+            }
+            &.syntax--function {
+              color: @purple;
+            }
+        }
+    }
+
+    .syntax--keyword {
+      color: @purple;
+    }
+
+    .syntax--variable {
+        color: @orange;
+        font-style: italic;
+        &.syntax--property {
+            color: @blue;
+        }
+        &.syntax--other, .syntax--object {
+            color: @blue-purple;
+        }
+        &.syntax--other.syntax--object.syntax--property {
+            color: @blue;
+        }
+    }
+
+    .syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @green;
+      }
+    }
+
+    &.syntax--string {
+      color: @orange;
+    }
+
+    .syntax--constant {
+        &.syntax--numeric {
+            color: @green;
+        }
+
+        &.syntax--boolean {
+          &.syntax--true {
+            color: @green;
+          }
+          &.syntax--false {
+            color: @red;
+          }
+        }
+    }
+
+    .syntax--punctuation,
+    .syntax--delimiter.syntax--object.syntax--comma,
+    .syntax--brace.syntax--curly {
+        color: @blue-purple;
+    }
+
+    .syntax--export .syntax--variable.syntax--default {
+        color: @purple;
+    }
+}

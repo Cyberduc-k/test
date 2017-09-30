@@ -1,0 +1,30 @@
+.syntax--html, .syntax--jsx, .syntax--xml {
+    .syntax--meta {
+        &.syntax--tag {
+            &.syntax--doctype {
+                color: @blue-purple;
+            }
+        }
+    }
+
+    &.syntax--name.syntax--tag {
+        color: @purple;
+    }
+
+    &.syntax--other.syntax--attribute-name {
+        color: @blue;
+    }
+
+    &.syntax--string {
+      color: @orange;
+    }
+
+    &.syntax--punctuation {
+        &.syntax--tag {
+            color: @purple;
+        }
+        &.syntax--string {
+            color: @yellow;
+        }
+    }
+}

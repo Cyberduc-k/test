@@ -1,0 +1,34 @@
+.syntax--css {
+    &.syntax--class, .syntax--other {
+      color: mix(@blue, @green, 50%);
+    }
+
+    &.syntax--tag {
+        color: @purple;
+    }
+
+    &.syntax--id {
+        color: @blue-purple;
+    }
+
+    &.syntax--property-name {
+      color: @blue;
+    }
+
+    &.syntax--constant {
+      color: @orange;
+      .syntax--unit {
+        color: @yellow;
+      }
+    }
+
+    .syntax--punctuation {
+        &.syntax--delimiter {
+            color: @cyan;
+
+            + .syntax--constant.syntax--numeric:not(.syntax--color) {
+                color: @strong-orange;
+            }
+        }
+    }
+}

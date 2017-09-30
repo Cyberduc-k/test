@@ -1,0 +1,17 @@
+{
+  "name": "vuetify-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A syntax theme from the vuetifyjs.com website",
+  "keywords": [
+    "syntax",
+    "theme",
+    "vue",
+    "vuetify"
+  ],
+  "repository": "https://github.com/cyberduckrecords/vuetify-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  }
+}
