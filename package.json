@@ -1,7 +1,7 @@
 {
   "name": "vuetify-syntax",
   "theme": "syntax",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A syntax theme from the vuetifyjs.com website",
   "keywords": [
     "syntax",
