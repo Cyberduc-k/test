@@ -1,6 +1,6 @@
 {
   "name": "vuetify-syntax",
-  "main": "./lib/vuetify-syntax"
+  "main": "./lib/vuetify-syntax",
   "theme": "syntax",
   "version": "0.2.4",
   "description": "A syntax theme from the vuetifyjs.com website",
