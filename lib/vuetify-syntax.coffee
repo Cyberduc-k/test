@@ -6,7 +6,7 @@ module.exports =
       @updateSettings()
 
   clearSettings: ->
-    document.documentElement.classList.remove 'drop-shadow'
+    document.documentElement.classList.remove 'syntax--drop-shadow'
 
   updateSettings: ->
     @clearSettings()
@@ -14,7 +14,7 @@ module.exports =
     dropShadow = atom.config.get 'vuetify-syntax.dropShadow'
 
     if dropShadow
-      document.documentElement.classList.add 'drop-shadow'
+      document.documentElement.classList.add 'syntax--drop-shadow'
 
   deactivate: ->
     @clearSettings()
