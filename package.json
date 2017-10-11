@@ -1,5 +1,6 @@
 {
   "name": "vuetify-syntax",
+  "main": "./lib/vuetify-syntax"
   "theme": "syntax",
   "version": "0.2.4",
   "description": "A syntax theme from the vuetifyjs.com website",
@@ -13,5 +14,14 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.13.0 <2.0.0"
+  },
+  "configSchema": {
+    "dropShadow": {
+      "title": "Drop Shadow",
+      "order": 1,
+      "description": "Adds A Drop Shadow To The Text.",
+      "type": "boolean",
+      "default": true
+    }
   }
 }

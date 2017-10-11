@@ -4,7 +4,6 @@ atom-text-editor {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
     font-weight: 600;
-    text-shadow: 0 .5px 1.5px rgba(0,0,0,0.2), 0 2px 2px rgba(0,0,0,0.34);
 
     .wrap-guide {
         background-color: @syntax-indent-guide-color;
@@ -56,6 +55,10 @@ atom-text-editor {
     .selection .region {
         background-color: @syntax-selection-color;
     }
+}
+
+.drop-shadow atom-text-editor {
+  text-shadow: 0 2px 5px;
 }
 
 atom-text-editor .search-results .syntax--marker .region {
